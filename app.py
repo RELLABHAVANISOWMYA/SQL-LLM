@@ -8,7 +8,7 @@ import google.generativeai as genai
 load_dotenv()
 
 # Configure GenAI Key
-genai.configure(api_key=os.getenv("AIzaSyDC_0JvqvbhsKvI1YNeeTp_TPjJyMvm2XI"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(question,prompt):
     model=genai.GenerativeModel('gemini-pro')
